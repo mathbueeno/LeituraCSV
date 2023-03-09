@@ -10,7 +10,7 @@ namespace LeitorCSVFinal.Models
 {
     public class Venda
     {
-        public int Documento { get; set; }
+        public string Documento { get; set; }
         public string RazaoSocial { get; set; }
         public int CEP { get; set; }
         public string Produto { get; set; }

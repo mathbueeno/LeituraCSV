@@ -7,6 +7,7 @@ using System.Globalization;
 var config = new CsvConfiguration(CultureInfo.InvariantCulture)
 {
 	HasHeaderRecord = true,
+	BadDataFound = null
 };
 
 using (var reader = new StreamReader("../../../teste.csv"))
@@ -18,10 +19,10 @@ using (var csv = new CsvReader(reader, config))
 
 	foreach (var venda in vendas)
 	{
-		Console.WriteLine($" Razao Social: {venda.RazaoSocial}");
+		Console.WriteLine($"Documento: {venda.Documento}, Razao Social: {venda.RazaoSocial}, CEP: {venda.CEP}, Produto: {venda.Produto}, Numero do Pedido: {venda.NumerodoPedido}");
 	}
 }
 	Console.Read();
 
 
-// CEP: {venda.CEP}, Produto: {venda.Produto}, Numero do Pedido: {venda.NumerodoPedido}, Data: {venda.Data}
+// 

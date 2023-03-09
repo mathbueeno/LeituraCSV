@@ -12,12 +12,12 @@ namespace LeitorCSVFinal.Mapping
 	{
 		public VendaMap() 
 		{
-			Map(v => v.Documento).Name("documento");
-			Map(v => v.RazaoSocial).Name("razao_social");
-			Map(v => v.CEP).Name("cep");
-			Map(v => v.Produto).Name("produto");
-			Map(v => v.NumerodoPedido).Name("numero_pedido");
-			Map(v => v.Data).Name("data_pedido");
+			Map(v => v.Documento).Name("Documento");
+			Map(v => v.RazaoSocial).Name("RazaoSocial");
+			Map(v => v.CEP).Name("CEP");
+			Map(v => v.Produto).Name("Produto");
+			Map(v => v.NumerodoPedido).Name("Numerodopedido");
+			Map(v => v.Data).Name("Data");
 		}
 	}
 }
